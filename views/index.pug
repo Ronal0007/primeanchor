@@ -8,6 +8,7 @@ html(lang='en')
         link(rel='canonical' href='https://getbootstrap.com/docs/4.3/examples/jumbotron/')
         link(rel='shortcut icon' href='./images/logo.gif')
         // Bootstrap core CSS
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple")
         link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
         link(href='./bootstrap/css/bootstrap.min.css' rel='stylesheet')
         link(href='./bootstrap/css/style.css' rel='stylesheet')
@@ -146,6 +147,11 @@ html(lang='en')
                                         a Business Support
                 // /Services Area
                 // services
+                section#vision
+                    .container
+                        img.img-fluid(src='./images/logo.jpg', alt='Responsive image')
+                        p.font-effect-shadow-multiple#headerSlogan
+                            | "I can I must I will"
                 section#services
                     .container
                         .row
@@ -161,6 +167,20 @@ html(lang='en')
                             .services-individual-box.col-md-3.col-sm-6
                                 h3 Get Support
                                 i.fa.fa-4x.fa-support
+                section#vision
+                    .container
+                        p#headerVis
+                            | VISION
+                        li To achieve the best quality and good workmanship
+                        li Deriver standardized works on return of client money
+                        li Provide technical advice to our esteemed client
+                        li To deriver scheduled project timely
+                section#mission
+                    .container
+                        p#headerVis
+                            | MISSION
+                        li Be the best in construction industry, financial service, real estate who offers the best quality and workmanship in return of our client’s invested money.              
+
                 hr
                 br
                 #recent.conta
@@ -203,13 +223,19 @@ html(lang='en')
                             li Transport and Cargo
                     .col-xs-6.col-md-3
                         h6 Quick Links
-                        ul.footer-links
+                        ul.footer-links#quick
                             li
-                                a(href='#aboutus') About Us
+                                a(href='#aboutus')
+                                    i.fa.fa-map-marker &nbsp&nbsp&nbsp
+                                    | P.O.Box 31042 Dar Es Salaam
                             li
-                                a(href='tel:+255785641641') +255 785 641 641
+                                a(href='tel:+255785641641') 
+                                    i.fa.fa-phone &nbsp&nbsp&nbsp
+                                    | +255 785 641 641
                             li
-                                a(href='/login') Gallery
+                                a(href='mailto:info@primeanchor.co.tz') 
+                                    i.fa.fa-envelope &nbsp&nbsp&nbsp
+                                    | info@primeanchor.co.tz
                             li
                                 .socialbtns(align='center')
                                     ul
@@ -225,14 +251,9 @@ html(lang='en')
                         p.copyright-text
                             | Copyright &copy; 2020<script>new Date().getFullYear()>2020&&document.write("-"+new Date().getFullYear());</script>. All Rights Reserved 
                             
-                    .col-md-4.col-sm-6.col-xs-12
-                        a(href='') P.O.Box 31042 Dar Es Salaam
+                    .col-md-4.col-sm-6.col-xs-7
+                        a(href='/login') Gallery
                     #email.col-md-2.col-sm-6.col-xs-12
-                        a(href='mailto:info@primeanchor.co.tz')
-                            | info@primeanchor.co.tz
-            .container
-                .row
-                    .col-md-12#des
                         a(href='https://ronaltech.co.tz') Designed By: RonalTech Co. LTD
         script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
         script.

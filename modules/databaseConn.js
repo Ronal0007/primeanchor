@@ -5,7 +5,7 @@ var connection = mysqli.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'abidainv'
+    database: 'prime_anc'
   });
 
     connection.connect((function (err) {
